@@ -1,0 +1,125 @@
+html {
+    background: black url(/assets/background.jpg) center  no-repeat; 
+    background-size: cover; color: white;
+}
+
+body { 
+    display: block;
+    place-items: center;
+    margin: 0%;
+    font-family: inter, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+
+@media (min-width: 500px) {
+     body {
+        display: grid;
+    } 
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    font-size: clamp(1rem, 2vw, 2rem);
+    line-height: 1.5em;
+}
+
+@media (min-width: 300px) {
+    .container { 
+        margin: 2vh;  
+        padding: 2rem; 
+        border-radius: 2rem; 
+    }
+}
+
+@media (min-width: 500px) {
+    .container { 
+        margin: 7vw;  
+        padding: 3rem; 
+     
+    }
+}
+
+header {  }
+
+.dnz-avatar {  
+    display: block; 
+    float: left; 
+    width: 112px; 
+    height: auto;
+    margin: 0 1em 1em 0;
+    border-radius: 50%;
+}
+
+@media (min-width: 380px) {
+    .dnz-avatar { 
+        float: left; 
+    } 
+}
+
+.dnz-descriereperncipala {
+    display: block;
+    margin: 0.5em 0 1.5;
+}
+
+.dnz-titlupaginii {
+    display: grid;   /*block(delete-[(place-items: center;]*/
+    place-items: center;
+    margin: 0;
+    font-size: clamp(2rem, 6vw, 4rem); 
+    line-height: 1em;
+}
+
+main { 
+    clear: both;
+ }
+
+.dnzlistalinkueri {
+    display: block;
+    margin: 0;
+    padding: 0;  
+    border-top: 1px solid #fff;
+}
+
+@media (min-width: 1000px) {
+    .dnzlistalinkueri {
+        display: grid;
+        /*grid-template-columns: 1fr 1fr;*/
+        
+    }
+}
+
+.dnz-lista-dnz-item-dnz {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #fff;   
+}
+
+.ListaLink {
+    display: block;
+    padding: 0.5;
+    color: #fff;
+    text-decoration: none;
+}
+
+.ListaLink:hover {
+    background: white;
+    color: black;
+}
+
+.dnz-listatitlu, .dnz-listatext {
+    display: block;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+.dnz-listatext {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
